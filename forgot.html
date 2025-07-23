@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BandhanSetu - Where Hearts Unite</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-rose-50 to-pink-50 min-h-screen flex items-center justify-center">
+
+    <div class="bg-white rounded-2xl shadow-xl p-8 w-full max-w-md">
+        <!-- Title -->
+        <h1 class="text-3xl font-bold text-center text-deep-maroon mb-6">Reset Your Password</h1>
+
+        <!-- Forgot Password Form -->
+        <form action="reset-link.html" method="POST" class="space-y-4">
+            <p class="text-gray-600 text-center">Enter your registered email to receive a reset link.</p>
+            <input type="email" placeholder="Email Address" name="email" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-rose-gold focus:border-transparent">
+            
+            <button type="submit" class="w-full bg-soft-maroon text-white px-6 py-3 rounded-lg hover:bg-deep-maroon transition-colors">Send Reset Link</button>
+        </form>
+
+        <!-- Links -->
+        <div class="mt-6 text-center text-gray-600">
+            <p>
+                <a href="login.html" class="text-soft-maroon hover:text-deep-maroon">Back to Login</a>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -413,13 +413,13 @@
                     <div id="step1" class="registration-step">
                         <h2 class="text-2xl font-semibold text-deep-maroon mb-6">Personal Information</h2>
                         <div class="grid md:grid-cols-2 gap-4">
-                            <input type="text" placeholder="First Name" class="border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-rose-gold focus:border-transparent">
-                            <input type="text" placeholder="Last Name" class="border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-rose-gold focus:border-transparent">
-                            <input type="email" placeholder="Email Address" class="border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-rose-gold focus:border-transparent">
-                            <input type="password" placeholder="Password" class="border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-rose-gold focus:border-transparent">
-                            <input type="tel" placeholder="Phone Number" class="border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-rose-gold focus:border-transparent">
-                            <input type="date" placeholder="Date of Birth" class="border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-rose-gold focus:border-transparent">
-                            <select class="border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-rose-gold focus:border-transparent">
+                            <input type="text" placeholder="First Name" required class="border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-rose-gold focus:border-transparent">
+                            <input type="text" placeholder="Last Name" required class="border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-rose-gold focus:border-transparent">
+                            <input type="email" placeholder="Email Address" required class="border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-rose-gold focus:border-transparent">
+                            <input type="password" placeholder="Password" required class="border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-rose-gold focus:border-transparent">
+                            <input type="tel" placeholder="Phone Number" required class="border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-rose-gold focus:border-transparent">
+                            <input type="date" placeholder="Date of Birth" required class="border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-rose-gold focus:border-transparent">
+                            <select required  requiredclass="border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-rose-gold focus:border-transparent">
                                 <option>Gender</option>
                                 <option>Male</option>
                                 <option>Female</option>
@@ -505,7 +505,7 @@
             </div>
         </section>
     </div>
-    
+
     <!-- About Us Page -->
     <div id="about" class="page pt-20">
         <section class="py-12 bg-white">
@@ -673,10 +673,10 @@
                     <div class="bg-gradient-to-br from-rose-50 to-pink-50 rounded-2xl p-8">
                         <h2 class="text-2xl font-semibold text-deep-maroon mb-6">Get in Touch</h2>
                         <form class="space-y-4">
-                            <input type="text" placeholder="Your Name" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-rose-gold focus:border-transparent">
-                            <input type="email" placeholder="Your Email" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-rose-gold focus:border-transparent">
-                            <input type="text" placeholder="Subject" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-rose-gold focus:border-transparent">
-                            <textarea placeholder="Your Message" rows="5" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-rose-gold focus:border-transparent"></textarea>
+                            <input type="text" placeholder="Your Name" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-rose-gold focus:border-transparent">
+                            <input type="email" placeholder="Your Email" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-rose-gold focus:border-transparent">
+                            <input type="text" placeholder="Subject" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-rose-gold focus:border-transparent">
+                            <textarea placeholder="Your Message" rows="5" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-rose-gold focus:border-transparent"></textarea>
                             <button type="submit" class="w-full bg-soft-maroon text-white py-3 rounded-lg hover:bg-deep-maroon transition-colors">
                                 Send Message
                             </button>
@@ -981,25 +981,6 @@
                 nextBtn.textContent = 'Next';
             }
         }
-
-        function showAuthForm(formId) {
-        document.getElementById('loginForm').classList.add('hidden');
-        document.getElementById('forgotForm').classList.add('hidden');
-        document.getElementById(formId).classList.remove('hidden');
-
-        document.getElementById('loginTab').classList.remove('text-soft-maroon', 'border-soft-maroon');
-        document.getElementById('loginTab').classList.add('text-gray-500', 'border-transparent');
-
-        document.getElementById('forgotTab').classList.remove('text-soft-maroon', 'border-soft-maroon');
-        document.getElementById('forgotTab').classList.add('text-gray-500', 'border-transparent');
-
-        if (formId === 'loginForm') {
-            document.getElementById('loginTab').classList.add('text-soft-maroon', 'border-soft-maroon');
-        } else {
-            document.getElementById('forgotTab').classList.add('text-soft-maroon', 'border-soft-maroon');
-        }
-    }
-
 
         // FAQ Accordion
         function toggleAccordion(id) {
